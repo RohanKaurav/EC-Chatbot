@@ -9,7 +9,7 @@ const Login = ({ setToken }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("https://ec-chatbot.onrender.com", {
+      const response = await axios.post("https://ec-chatbot.onrender.com/api/auth", {
         username,
         password,
       });

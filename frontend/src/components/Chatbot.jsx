@@ -37,7 +37,7 @@ const Chatbot = () => {
 
     // Send query to the backend for product search
     try {
-      const response = await axios.post("https://ec-chatbot.onrender.com", {
+      const response = await axios.post("https://ec-chatbot.onrender.com/api/chat", {
         query: input,
       });
       setMessages([
