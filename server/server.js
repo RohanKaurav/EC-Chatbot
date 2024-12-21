@@ -8,7 +8,11 @@ const app = express();
 const PORT = 3000;
 const JWT_SECRET = "your_secret_key";
 
-app.use(cors());
+const cors = require("cors");
+app.use(cors({
+  origin: "https://prismatic-starburst-ce8a7f.netlify.app", // Allow only your frontend
+}));
+
 app.use(bodyParser.json());
 
 // Authentication Route
