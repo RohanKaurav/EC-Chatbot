@@ -9,7 +9,7 @@ const Login = ({ setToken }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/api/auth", {
+      const response = await axios.post("https://ec-chatbot.onrender.com", {
         username,
         password,
       });
