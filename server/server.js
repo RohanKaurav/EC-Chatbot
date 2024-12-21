@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // Authentication Route
 app.post("/api/auth", (req, res) => {
   const { username, password } = req.body;
-  if (username === "test" && password === "password") {
+  if (username === "Gauranga" && password === "Chaitanya") {
     const token = jwt.sign({ username }, JWT_SECRET, { expiresIn: "1h" });
     return res.json({ token });
   }
